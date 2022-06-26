@@ -15,6 +15,15 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'javax.inject:javax.inject:1'
+    implementation 'org.springframework.retry:spring-retry'//Dependency for spring retry
+    implementation 'org.springframework:spring-aspects'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+    implementation 'junit:junit:4.12'
+    compileOnly 'org.projectlombok:lombok:1.18.24'//Dependency for logging and other basic function
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.24'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
